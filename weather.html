@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHECK DA WEATHER</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Changa+One:ital@0;1&family=Limelight&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="weather.css">
+ 
+</head>
+<body>
+    <div class="jumbotron">
+        <h1>CHECK DA WEATHER Y DON'T U</h1>
+    </div>
+    <form class="weatherForm">
+        <input type="text" class="inputCity" placeholder="Enter a city">
+        <button type="submit">Get Weather</button>
+    </form>
+    <p class="errorMessage"></p>
+    <div class="weathercard" style="display:none">
+        <br><br><h2 class="cityName">MIAMI</h2><br><br>
+        <p class="temp"></p>
+        <p class="humidity"></p>
+        <p class="desc"></p>
+        <i class="icon bi bi-sun-fill"></i>
+    </div>
+    <script src="config.js"></script>
+    <script src="weather.js"></script>
+</body>
+</html>
